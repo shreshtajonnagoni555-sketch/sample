@@ -3,10 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>John Doe - Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia cumque necessitatibus asperiores aperiam, iusto ut nulla natus, fugit ex nihil corporis ducimus dolorem sit facilis eius amet modi. Et autem unde recusandae impedit laudantium dolor sapiente at laboriosam maxime.</h1>
-    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">John Doe</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img">
+            <h1>John Doe</h1>
+            <p>Front-End Developer</p>
+            <p>Passionate about creating beautiful and functional web experiences. I specialize in modern web technologies and love bringing ideas to life through code.</p>
+            <div>
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#" class="btn" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hello! I'm John Doe, a passionate Front-End Developer with over 3 years of experience in creating responsive and user-friendly websites. I love turning complex problems into simple, beautiful designs.</p>
+            <p><strong>Education:</strong> Bachelor's Degree in Computer Science from XYZ University</p>
+            <p><strong>Career Goals:</strong> To continuously learn new technologies and contribute to innovative projects that make a positive impact on users' lives.</p>
+            <p><strong>Interests:</strong> Web development, UI/UX design, open-source contributions, and staying up-to-date with the latest web technologies.</p>
+        </div>
+        <div class="about-img">
+            <img src="https://via.placeholder.com/300" alt="About Image">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3 class="skill-name">HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">Responsive Web Design</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Web Design</h3>
+                <p>Creating visually appealing and user-friendly website designs that engage visitors and drive conversions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Front-End Development</h3>
+                <p>Building responsive and interactive web applications using modern HTML, CSS, and JavaScript frameworks.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive user interfaces and experiences that prioritize usability and accessibility.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Website Maintenance</h3>
+                <p>Providing ongoing support, updates, and optimizations to keep your website running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">Project Image 1</div>
+                <div class="project-content">
+                    <h3>E-Commerce Website</h3>
+                    <p>A fully responsive e-commerce platform built with React and Node.js, featuring user authentication and payment integration.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">Project Image 2</div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern portfolio website showcasing creative work, built with HTML, CSS, and JavaScript with smooth animations.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">Project Image 3</div>
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>A weather application that provides real-time weather data using APIs, with a clean and intuitive user interface.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"John is an exceptional developer who delivered our project on time and exceeded our expectations. His attention to detail and creativity are outstanding."</p>
+                <p class="testimonial-author">- Jane Smith, CEO of TechCorp</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Working with John was a pleasure. He has a great understanding of modern web technologies and always delivers high-quality work."</p>
+                <p class="testimonial-author">- Mike Johnson, Founder of StartupXYZ</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"John's expertise in front-end development helped us create a stunning website that our users love. Highly recommended!"</p>
+                <p class="testimonial-author">- Sarah Davis, Marketing Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>john.doe@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📞</span>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="GitHub">🐙</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> John Doe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="GitHub">🐙</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
