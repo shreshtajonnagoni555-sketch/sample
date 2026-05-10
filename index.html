@@ -3,231 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Front-End Developer</title>
+    <title>Alex Chen - Premium Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">John Doe</div>
+            <div class="logo">
+                <span class="logo-text">AC</span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button id="theme-toggle">🌙</button>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Home Section -->
-    <section id="home">
-        <div class="home-content">
-            <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img">
-            <h1>John Doe</h1>
-            <p>Front-End Developer</p>
-            <p>Passionate about creating beautiful and functional web experiences. I specialize in modern web technologies and love bringing ideas to life through code.</p>
-            <div>
-                <a href="#contact" class="btn">Hire Me</a>
-                <a href="#" class="btn" download>Download CV</a>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text">Frontend Developer</span>
+                </h1>
+                <p class="hero-subtitle">Crafting beautiful, responsive web experiences</p>
+                <p class="hero-description">
+                    I transform ideas into elegant digital solutions using modern web technologies. 
+                    Specializing in creating stunning UIs with seamless interactions.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Dribbble">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </div>
             </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Profile" class="profile-img">
+                    <div class="glow-ring"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="mouse"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>Hello! I'm John Doe, a passionate Front-End Developer with over 3 years of experience in creating responsive and user-friendly websites. I love turning complex problems into simple, beautiful designs.</p>
-            <p><strong>Education:</strong> Bachelor's Degree in Computer Science from XYZ University</p>
-            <p><strong>Career Goals:</strong> To continuously learn new technologies and contribute to innovative projects that make a positive impact on users' lives.</p>
-            <p><strong>Interests:</strong> Web development, UI/UX design, open-source contributions, and staying up-to-date with the latest web technologies.</p>
-        </div>
-        <div class="about-img">
-            <img src="https://via.placeholder.com/300" alt="About Image">
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=500&fit=crop" alt="About">
+                        <div class="about-badge">5+ Years Experience</div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Frontend Developer & UI/UX Enthusiast</h3>
+                    <p>
+                        With over 5 years of experience in web development, I've had the privilege of working with 
+                        amazing teams on diverse projects. My passion lies in creating intuitive, accessible, and 
+                        visually stunning web applications that solve real-world problems.
+                    </p>
+                    <div class="about-cards">
+                        <div class="info-card glass">
+                            <h4>🎓 Education</h4>
+                            <p>Bachelor's in Computer Science</p>
+                        </div>
+                        <div class="info-card glass">
+                            <h4>💼 Experience</h4>
+                            <p>Frontend Specialist & Designer</p>
+                        </div>
+                        <div class="info-card glass">
+                            <h4>🌍 Based In</h4>
+                            <p>San Francisco, California</p>
+                        </div>
+                        <div class="info-card glass">
+                            <h4>🚀 Focus</h4>
+                            <p>Modern Web & Mobile Apps</p>
+                        </div>
+                    </div>
+                    <p class="about-footer">
+                        When I'm not coding, you'll find me exploring UI design trends, contributing to open source, 
+                        or sharing knowledge with the developer community.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3 class="skill-name">HTML</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 95%"></div>
-                </div>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies I work with</p>
             </div>
-            <div class="skill-card">
-                <h3 class="skill-name">CSS</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%"></div>
+            <div class="skills-grid">
+                <div class="skill-card glass">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup & accessibility</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
                 </div>
-            </div>
-            <div class="skill-card">
-                <h3 class="skill-name">JavaScript</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%"></div>
+
+                <div class="skill-card glass">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Animations & responsive design</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                    <span class="skill-percent">92%</span>
                 </div>
-            </div>
-            <div class="skill-card">
-                <h3 class="skill-name">Responsive Web Design</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%"></div>
+
+                <div class="skill-card glass">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+ & interactive experiences</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-card glass">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Component-based development</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                    <span class="skill-percent">88%</span>
+                </div>
+
+                <div class="skill-card glass">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design principles</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-card glass">
+                    <div class="skill-icon">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h3>Bootstrap</h3>
+                    <p>Rapid prototyping & frameworks</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 89%"></div>
+                    </div>
+                    <span class="skill-percent">89%</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>My Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🎨</div>
-                <h3>Web Design</h3>
-                <p>Creating visually appealing and user-friendly website designs that engage visitors and drive conversions.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">💻</div>
-                <h3>Front-End Development</h3>
-                <p>Building responsive and interactive web applications using modern HTML, CSS, and JavaScript frameworks.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">📱</div>
-                <h3>UI/UX Design</h3>
-                <p>Designing intuitive user interfaces and experiences that prioritize usability and accessibility.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🔧</div>
-                <h3>Website Maintenance</h3>
-                <p>Providing ongoing support, updates, and optimizations to keep your website running smoothly.</p>
-            </div>
-        </div>
-    </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img">Project Image 1</div>
-                <div class="project-content">
-                    <h3>E-Commerce Website</h3>
-                    <p>A fully responsive e-commerce platform built with React and Node.js, featuring user authentication and payment integration.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A selection of my recent work</p>
             </div>
-            <div class="project-card">
-                <div class="project-img">Project Image 2</div>
-                <div class="project-content">
-                    <h3>Portfolio Website</h3>
-                    <p>A modern portfolio website showcasing creative work, built with HTML, CSS, and JavaScript with smooth animations.</p>
-                    <a href="#" class="btn">View Project</a>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-btn" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern shopping platform with real-time inventory, payment integration, and responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">Project Image 3</div>
-                <div class="project-content">
-                    <h3>Weather App</h3>
-                    <p>A weather application that provides real-time weather data using APIs, with a clean and intuitive user interface.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p class="testimonial-text">"John is an exceptional developer who delivered our project on time and exceeded our expectations. His attention to detail and creativity are outstanding."</p>
-                <p class="testimonial-author">- Jane Smith, CEO of TechCorp</p>
-            </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Working with John was a pleasure. He has a great understanding of modern web technologies and always delivers high-quality work."</p>
-                <p class="testimonial-author">- Mike Johnson, Founder of StartupXYZ</p>
-            </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"John's expertise in front-end development helped us create a stunning website that our users love. Highly recommended!"</p>
-                <p class="testimonial-author">- Sarah Davis, Marketing Manager</p>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=300&fit=crop" alt="Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-btn" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management with real-time updates, drag-and-drop interface, and team features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-btn" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Interactive dashboard with real-time data visualization, charts, and comprehensive analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Have a project in mind? Let's talk!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card glass">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:hello@alexchen.com">hello@alexchen.com</a>
+                    </div>
+                    <div class="contact-card glass">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <a href="tel:+14155552671">+1 (415) 555-2671</a>
+                    </div>
+                    <div class="contact-card glass">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>San Francisco, CA</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>📧</span>
-                    <span>john.doe@example.com</span>
-                </div>
-                <div class="contact-item">
-                    <span>📞</span>
-                    <span>+1 (555) 123-4567</span>
-                </div>
-                <div class="social-links">
-                    <a href="#" aria-label="LinkedIn">💼</a>
-                    <a href="#" aria-label="GitHub">🐙</a>
-                    <a href="#" aria-label="Twitter">🐦</a>
-                </div>
+                <form class="contact-form glass" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                        <span class="form-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-message"></div>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <p>&copy; <span id="current-year"></span> John Doe. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" aria-label="LinkedIn">💼</a>
-                <a href="#" aria-label="GitHub">🐙</a>
-                <a href="#" aria-label="Twitter">🐦</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Alex Chen. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
         </div>
+        <button id="scroll-to-top" class="scroll-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </footer>
-
-    <!-- Scroll to Top Button -->
-    <button id="scroll-to-top" aria-label="Scroll to top">↑</button>
 
     <script src="script.js"></script>
 </body>
